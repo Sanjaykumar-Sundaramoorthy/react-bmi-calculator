@@ -57,12 +57,15 @@ function App() {
             <label htmlFor='weight'>Weight (kg):</label>
             <input type="text" value={weight} onChange={(e)=> setWeight(e.target.value)} id="weight" />
           </div>
+          <div className='button-box'>
           <button onClick={calculateBmi}>Calculate BMI</button>
           <button onClick={clearAll}>Clear</button>
-          {bmi !== null && (<div className="result">
+          </div>
+          <div className="result">
             <p>Your BMI is: {bmi}</p>
             <p>Status: {bmiStatus}</p>
-          </div>)}
+          </div>
+          <p className='footer'>designed by <a href="https://www.linkedin.com/in/sanjaykumar-21csr092/" target='blank'>Sanjaykumar</a></p>
         </div>
       </div>
     </>
